@@ -46,10 +46,10 @@ async function readchap(num,ctoken,cokie,numcokie){
                         .then((response) => response.text())
                         .then((body) => {
                             let succ2 = (body.match(/"success":(.*?),/)||[])[1]
-                            console.log(body)
+                            console.log(body,__count)
                             if(succ2=='true'){
                                 __count++
-                                setTimeout(resolve,1000)
+                                setTimeout(resolve,5000)
                             }else{
                                 resolve()
                             }
@@ -72,7 +72,7 @@ main()
 
 const http = require('http');
 
-const hostname = '127.0.0.1';
+const hostname = 'localhost';
 const port = 3000;
 
 const server = http.createServer((req, res) => {
