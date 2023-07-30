@@ -44,9 +44,9 @@ async function readchap(num,ctoken,cokie,numcokie){
                         body:JSON.stringify(dataread),
                     })
                         .then((response) => response.text())
-                        .then((body) => {
-                            let succ2 = (body.match(/"success":(.*?),/)||[])[1]
-                            console.log(body,__count)
+                        .then((bod) => {
+                            let succ2 = (bod.match(/"success":(.*?),/)||[])[1]
+                            console.log(bod,__count)
                             if(succ2=='true'){
                                 __count++
                                 setTimeout(resolve,5000)
