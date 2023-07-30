@@ -1,0 +1,15 @@
+{
+  "name": "buff-views",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./main.js"
+  },
+  "engines": {
+    "node": ">=18 <19"
+  },
+  "author": "",
+  "license": "ISC"
+}
