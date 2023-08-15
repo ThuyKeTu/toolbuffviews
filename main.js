@@ -61,6 +61,7 @@ async function readchap(num,ctoken,cokie,numcokie){
 
 async function main(){
     for(i=0;i<queue.length;i++){
+//hello test 123123ouasoduyh
         await readchap(i,__token,cokie_1,'c1')
         await readchap(i,__token,cokie_2,'c2')
     }
